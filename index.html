@@ -51,6 +51,38 @@
       font-size: 0.9rem;
       color: #6e7681;
     }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #58a6ff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background-color: #79c0ff;
+      transform: scale(1.1);
+    }
+
+    .social-icon img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .social-icon:active {
+      transform: scale(0.95);
+    }
   </style>
 </head>
 <body>
@@ -61,6 +93,21 @@
     building cool projects on <span class="highlight">Discord, GitHub, and Roblox</span>.  
     I love developing bots, hate wasting time on long scripts, and always seek smart solutions.
   </p>
+
+  <div class="social-icons">
+    <a href="https://discord.com" target="_blank" class="social-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Discord_Logo_2023.png" alt="Discord">
+    </a>
+    <a href="https://www.youtube.com" target="_blank" class="social-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/YouTube_icon.png" alt="YouTube">
+    </a>
+    <a href="https://bsky.app" target="_blank" class="social-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Bluesky_logo.svg" alt="Blue Sky">
+    </a>
+    <a href="https://x.com" target="_blank" class="social-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_logo.svg" alt="X (Twitter)">
+    </a>
+  </div>
 
   <footer>
     &copy; 2025 UocDev. All rights reserved.
