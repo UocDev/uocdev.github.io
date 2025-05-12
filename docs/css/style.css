@@ -1,90 +1,67 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  background-color: #000;
-  color: #eee;
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: #0d1117;
+  color: #c9d1d9;
 }
 
-/* Header */
-.site-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #111;
-  border-bottom: 1px solid #222;
+.container {
+  display: flex;
+  min-height: 100vh;
 }
-.site-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #161b22;
+  padding: 1rem;
+  border-right: 1px solid #30363d;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
-.site-header p {
-  font-size: 1.1rem;
-  opacity: 0.8;
+.sidebar h1 {
+  font-size: 1.4rem;
+  color: #58a6ff;
 }
-.site-header nav a {
-  color: #4fc3f7;
+.sidebar nav {
+  margin-top: 1rem;
+}
+.sidebar nav a {
+  display: block;
+  color: #c9d1d9;
   text-decoration: none;
-  margin: 0 0.5rem;
+  padding: 0.5rem 0;
 }
-.site-header nav a:hover {
-  text-decoration: underline;
+.sidebar nav a:hover {
+  color: #58a6ff;
 }
 
 /* Main Content */
-.content {
+.main-content {
   flex: 1;
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 2rem;
 }
-.content h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  color: #fff;
+.main-content header {
+  border-bottom: 1px solid #30363d;
+  margin-bottom: 1.5rem;
 }
-.content ul {
-  list-style: inside disc;
-  margin-left: 1rem;
+.main-content h2 {
+  margin-bottom: 0.5rem;
 }
-.content code {
-  background: #222;
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-family: monospace;
-  font-size: 0.95rem;
+.main-content section {
+  margin-bottom: 2rem;
 }
-.content pre {
-  background: #222;
-  padding: 1rem;
+code, pre {
+  background: #161b22;
+  padding: 0.3rem 0.5rem;
   border-radius: 6px;
-  overflow-x: auto;
-  margin: 1rem 0;
-}
-
-/* Avatar */
-.avatar {
+  font-family: monospace;
+  color: #7ee787;
   display: block;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  border: 2px solid #444;
+  overflow-x: auto;
 }
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #111;
-  border-top: 1px solid #222;
-  font-size: 0.9rem;
-  opacity: 0.7;
-  }
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
